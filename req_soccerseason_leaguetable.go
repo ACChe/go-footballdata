@@ -11,7 +11,7 @@ func (r SoccerSeasonLeagueTableRequest) Matchday(matchday uint16) SoccerSeasonLe
 }
 
 // Executes the request.
-func (r SoccerSeasonLeagueTableRequest) Do() (s SoccerSeason, err error) {
+func (r SoccerSeasonLeagueTableRequest) Do() (s StandingList, err error) {
 	d, _, err := r.doJson("GET")
 	if err != nil {
 		return
