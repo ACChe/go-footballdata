@@ -130,3 +130,29 @@ type Player struct {
 	ContractUntil time.Time
 	MarketValue   string
 }
+
+// Contains a list of standing.
+type StandingList struct {
+	Matchday uint16
+	Standing []Standing
+}
+
+// Contains information about a table.
+type Standing struct {
+	Rank           int64
+	Team           string
+	CrestURI       string
+	PlayedGames    int64
+	Points         int64
+	Goals          int64
+	GoalsAgainst   int64
+	GoalDifference int64
+}
+
+type TeamStanding struct {
+	Goals        int64
+	GoalsAgainst int64
+	Wins         int64
+	Draws        int64
+	Losses       int64
+}
