@@ -15,5 +15,5 @@ func (r SoccerSeasonRequest) Do() (s SoccerSeason, err error) {
 
 // Prepares a request to fetch the complete list of soccer seasons.
 func (c *Client) SoccerSeason(id uint64) SoccerSeasonRequest {
-	return SoccerSeasonRequest{c.req("soccerseasons/%d", id)}
+	return SoccerSeasonRequest{c.req("competitions/%d", id)}
 }

@@ -139,13 +139,13 @@ type StandingList struct {
 
 // Contains information about a table.
 type Standing struct {
-	Rank           int64
+	Rank           int8
 	Team           string
 	TeamID         int64
 	CrestURI       string
-	PlayedGames    int64
-	Points         int64
-	Goals          int64
-	GoalsAgainst   int64
-	GoalDifference int64
+	PlayedGames    int8
+	Points         int16
+	Goals          int16
+	GoalsAgainst   int16
+	GoalDifference int8
 }
